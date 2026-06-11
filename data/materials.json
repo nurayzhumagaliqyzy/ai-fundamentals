@@ -1,0 +1,86 @@
+{
+  "instructions": [
+    {
+      "title": "How to Use the Learning Platform",
+      "description": "A short welcome video explaining how to navigate the course pages and download files.",
+      "type": "youtube",
+      "week": "Getting Started",
+      "tags": ["orientation", "video"],
+      "youtubeEmbedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "viewUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "title": "Course Folder on Google Drive",
+      "description": "Open the shared Google Drive folder for additional videos and supporting resources.",
+      "type": "drive",
+      "week": "Resources",
+      "tags": ["google drive", "files"],
+      "googleDriveUrl": "https://drive.google.com/",
+      "googleDrivePreviewUrl": "https://drive.google.com/embeddedfolderview?id=FOLDER_ID#grid",
+      "viewUrl": "https://drive.google.com/"
+    },
+    {
+      "title": "Student Guide",
+      "description": "Download the beginner guide for using video lessons, lecture PDFs, and practical tasks.",
+      "type": "pdf",
+      "week": "Guide",
+      "tags": ["guide", "download"],
+      "previewUrl": "assets/materials/instructions/student-guide.pdf",
+      "viewUrl": "assets/materials/instructions/student-guide.pdf",
+      "downloadUrl": "assets/materials/instructions/student-guide.pdf"
+    }
+  ],
+  "lectures": [
+    {
+      "title": "Lecture 1: Introduction to Artificial Intelligence",
+      "description": "Core ideas, history, applications, and the difference between narrow AI and general AI.",
+      "type": "pdf",
+      "week": "Week 1",
+      "tags": ["introduction", "concepts"],
+      "previewUrl": "assets/materials/lectures/lecture-01-introduction.pdf",
+      "viewUrl": "assets/materials/lectures/lecture-01-introduction.pdf",
+      "downloadUrl": "assets/materials/lectures/lecture-01-introduction.pdf"
+    },
+    {
+      "title": "Lecture 2: Machine Learning Basics",
+      "description": "Supervised, unsupervised, and reinforcement learning with beginner-friendly examples.",
+      "type": "pdf",
+      "week": "Week 2",
+      "tags": ["machine learning", "models"],
+      "previewUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf",
+      "viewUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf",
+      "downloadUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf"
+    }
+  ],
+  "practicals": [
+    {
+      "title": "Practical 1: Python Notebook for AI Basics",
+      "description": "A starter Jupyter Notebook for simple data exploration and model thinking.",
+      "type": "ipynb",
+      "week": "Week 1",
+      "tags": ["jupyter", "python"],
+      "viewUrl": "assets/materials/practicals/practical-01-ai-basics.ipynb",
+      "downloadUrl": "assets/materials/practicals/practical-01-ai-basics.ipynb",
+      "githubUrl": "https://github.com/"
+    },
+    {
+      "title": "Practical 2: AI Ethics Worksheet",
+      "description": "A PDF worksheet for discussing fairness, privacy, safety, and responsible AI.",
+      "type": "pdf",
+      "week": "Week 2",
+      "tags": ["ethics", "worksheet"],
+      "previewUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf",
+      "viewUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf",
+      "downloadUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf"
+    },
+    {
+      "title": "Example GitHub Repository",
+      "description": "Open a sample repository that can hold notebooks, datasets, and completed tasks.",
+      "type": "github",
+      "week": "Reference",
+      "tags": ["repository", "code"],
+      "githubUrl": "https://github.com/",
+      "viewUrl": "https://github.com/"
+    }
+  ]
+}
