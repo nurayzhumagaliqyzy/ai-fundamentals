@@ -1,30 +1,30 @@
 {
   "instructions": [
     {
-      "title": "How to Use the Learning Platform",
-      "description": "A short welcome video explaining how to navigate the course pages and download files.",
+      "title": "Оқу платформасын қалай қолдану керек",
+      "description": "Курс беттерін ашу және файлдарды жүктеу жолын түсіндіретін қысқа таныстыру бейнесі.",
       "type": "youtube",
-      "week": "Getting Started",
-      "tags": ["orientation", "video"],
+      "week": "Бастау",
+      "tags": ["таныстыру", "бейне"],
       "youtubeEmbedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
       "viewUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },
     {
-      "title": "Course Folder on Google Drive",
-      "description": "Open the shared Google Drive folder for additional videos and supporting resources.",
+      "title": "Google Drive-тағы курс папкасы",
+      "description": "Қосымша бейнелер мен көмекші материалдар сақталған ортақ Google Drive папкасын ашыңыз.",
       "type": "drive",
-      "week": "Resources",
-      "tags": ["google drive", "files"],
+      "week": "Ресурстар",
+      "tags": ["google drive", "файлдар"],
       "googleDriveUrl": "https://drive.google.com/",
       "googleDrivePreviewUrl": "https://drive.google.com/embeddedfolderview?id=FOLDER_ID#grid",
       "viewUrl": "https://drive.google.com/"
     },
     {
-      "title": "Student Guide",
-      "description": "Download the beginner guide for using video lessons, lecture PDFs, and practical tasks.",
+      "title": "Студентке арналған нұсқаулық",
+      "description": "Бейне сабақтарды, дәріс PDF файлдарын және практикалық тапсырмаларды қолдануға арналған бастапқы нұсқаулықты жүктеңіз.",
       "type": "pdf",
-      "week": "Guide",
-      "tags": ["guide", "download"],
+      "week": "Нұсқаулық",
+      "tags": ["нұсқаулық", "жүктеу"],
       "previewUrl": "assets/materials/instructions/student-guide.pdf",
       "viewUrl": "assets/materials/instructions/student-guide.pdf",
       "downloadUrl": "assets/materials/instructions/student-guide.pdf"
@@ -32,21 +32,21 @@
   ],
   "lectures": [
     {
-      "title": "Lecture 1: Introduction to Artificial Intelligence",
-      "description": "Core ideas, history, applications, and the difference between narrow AI and general AI.",
+      "title": "1-дәріс: Жасанды интеллектке кіріспе",
+      "description": "Негізгі ұғымдар, тарихы, қолданылуы және тар ЖИ мен жалпы ЖИ айырмашылығы.",
       "type": "pdf",
-      "week": "Week 1",
-      "tags": ["introduction", "concepts"],
+      "week": "1-апта",
+      "tags": ["кіріспе", "ұғымдар"],
       "previewUrl": "assets/materials/lectures/lecture-01-introduction.pdf",
       "viewUrl": "assets/materials/lectures/lecture-01-introduction.pdf",
       "downloadUrl": "assets/materials/lectures/lecture-01-introduction.pdf"
     },
     {
-      "title": "Lecture 2: Machine Learning Basics",
-      "description": "Supervised, unsupervised, and reinforcement learning with beginner-friendly examples.",
+      "title": "2-дәріс: Машиналық оқыту негіздері",
+      "description": "Бақыланатын, бақыланбайтын және нығайтпалы оқытуға арналған қарапайым мысалдар.",
       "type": "pdf",
-      "week": "Week 2",
-      "tags": ["machine learning", "models"],
+      "week": "2-апта",
+      "tags": ["машиналық оқыту", "модельдер"],
       "previewUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf",
       "viewUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf",
       "downloadUrl": "assets/materials/lectures/lecture-02-machine-learning.pdf"
@@ -54,31 +54,31 @@
   ],
   "practicals": [
     {
-      "title": "Practical 1: Python Notebook for AI Basics",
-      "description": "A starter Jupyter Notebook for simple data exploration and model thinking.",
+      "title": "1-практика: ЖИ негіздеріне арналған Python Notebook",
+      "description": "Деректерді қарапайым зерттеу және модель туралы ойлау үшін бастапқы Jupyter Notebook.",
       "type": "ipynb",
-      "week": "Week 1",
+      "week": "1-апта",
       "tags": ["jupyter", "python"],
       "viewUrl": "assets/materials/practicals/practical-01-ai-basics.ipynb",
       "downloadUrl": "assets/materials/practicals/practical-01-ai-basics.ipynb",
       "githubUrl": "https://github.com/"
     },
     {
-      "title": "Practical 2: AI Ethics Worksheet",
-      "description": "A PDF worksheet for discussing fairness, privacy, safety, and responsible AI.",
+      "title": "2-практика: ЖИ этикасы бойынша жұмыс парағы",
+      "description": "Әділдік, құпиялылық, қауіпсіздік және жауапты ЖИ тақырыптарын талқылауға арналған PDF жұмыс парағы.",
       "type": "pdf",
-      "week": "Week 2",
-      "tags": ["ethics", "worksheet"],
+      "week": "2-апта",
+      "tags": ["этика", "жұмыс парағы"],
       "previewUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf",
       "viewUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf",
       "downloadUrl": "assets/materials/practicals/practical-02-ai-ethics.pdf"
     },
     {
-      "title": "Example GitHub Repository",
-      "description": "Open a sample repository that can hold notebooks, datasets, and completed tasks.",
+      "title": "GitHub репозиторий үлгісі",
+      "description": "Notebook, деректер жиыны және орындалған тапсырмалар сақталатын үлгі репозиторийді ашыңыз.",
       "type": "github",
-      "week": "Reference",
-      "tags": ["repository", "code"],
+      "week": "Анықтама",
+      "tags": ["репозиторий", "код"],
       "githubUrl": "https://github.com/",
       "viewUrl": "https://github.com/"
     }

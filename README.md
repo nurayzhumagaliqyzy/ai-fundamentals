@@ -1,15 +1,15 @@
-# Artificial Intelligence Fundamentals - Learning Platform
+# Жасанды интеллект негіздері - Оқу платформасы
 
-A beginner-friendly static educational website for students. It includes pages for instructions, lectures, and practical tasks. Materials are stored in JSON and loaded dynamically, so you can add new resources without editing the page HTML.
+Бұл студенттерге арналған қарапайым статикалық оқу сайты. Сайтта нұсқаулықтар, дәрістер және практикалық тапсырмалар беттері бар. Барлық материалдар `data/materials.json` файлы арқылы жүктеледі, сондықтан жаңа материал қосу үшін HTML беттерін өзгертудің қажеті жоқ.
 
-## Pages
+## Беттер
 
-- `index.html` - Home page with an Apple-inspired hero and exactly three horizontal cards.
-- `instructions.html` - Video materials, YouTube embeds, Google Drive links, file viewing, and downloads.
-- `lectures.html` - Lecture cards with PDF previews and download buttons.
-- `practicals.html` - Practical tasks with Jupyter Notebook, PDF, GitHub, and download support.
+- `index.html` - Apple стиліне жақын заманауи басты бет және дәл 3 көлденең карточка.
+- `instructions.html` - YouTube бейнелері, Google Drive сілтемелері, файл қарау және жүктеу.
+- `lectures.html` - Дәріс карточкалары, PDF алдын ала қарау және жүктеу батырмалары.
+- `practicals.html` - Jupyter Notebook, PDF, GitHub сілтемелері және жүктеу мүмкіндігі.
 
-## Project Structure
+## Жоба құрылымы
 
 ```text
 .
@@ -37,37 +37,37 @@ A beginner-friendly static educational website for students. It includes pages f
     └── materials.json
 ```
 
-## How Materials Work
+## Материалдар қалай жұмыс істейді?
 
-All course content is listed in:
+Барлық курс материалдары мына файлда сақталады:
 
 ```text
 data/materials.json
 ```
 
-The website reads this JSON file and creates the cards automatically.
+Сайт осы JSON файлды оқып, карточкаларды автоматты түрде жасайды.
 
-## How to Preview Locally
+## Сайтты компьютерде көру
 
-Because the pages use `fetch()` to read JSON, open the project with a local web server.
+JSON файлын оқу үшін сайтты жергілікті сервер арқылы ашқан дұрыс.
 
-One simple option:
+Терминалда жоба папкасында мына команданы орындаңыз:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
+Содан кейін браузерден ашыңыз:
 
 ```text
 http://localhost:8000
 ```
 
-## How to Upload to GitHub
+## GitHub-қа қалай жүктеу керек?
 
-1. Create a new repository on GitHub.
-2. Open Terminal in this project folder.
-3. Run these commands:
+1. GitHub-та жаңа repository жасаңыз.
+2. Терминалды осы жоба папкасында ашыңыз.
+3. Мына командаларды орындаңыз:
 
 ```bash
 git init
@@ -78,59 +78,65 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 git push -u origin main
 ```
 
-Replace `YOUR-USERNAME` and `YOUR-REPOSITORY` with your GitHub account and repository name.
+`YOUR-USERNAME` және `YOUR-REPOSITORY` орнына өз GitHub атыңызды және repository атауын жазыңыз.
 
-## How to Enable GitHub Pages
+## GitHub Pages қалай қосылады?
 
-1. Open your repository on GitHub.
-2. Go to **Settings**.
-3. Open **Pages** in the left sidebar.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch: `main`.
-6. Select folder: `/root`.
-7. Click **Save**.
-8. Wait a minute. GitHub will show your website link at the top of the Pages settings.
+1. GitHub-та repository бетін ашыңыз.
+2. **Settings** бөліміне кіріңіз.
+3. Сол жақ мәзірден **Pages** бөлімін таңдаңыз.
+4. **Build and deployment** бөлімінде **Deploy from a branch** таңдаңыз.
+5. Branch ретінде `main` таңдаңыз.
+6. Folder ретінде `/root` таңдаңыз.
+7. **Save** батырмасын басыңыз.
+8. Бірнеше минуттан кейін GitHub Pages сілтемесі дайын болады.
 
-## How to Add a New Lecture
+## Кейін жаңа дәріс қалай қосылады?
 
-1. Put your PDF file inside:
+1. Жаңа PDF файлын мына папкаға салыңыз:
 
 ```text
 assets/materials/lectures/
 ```
 
-Example:
+Мысалы:
 
 ```text
 assets/materials/lectures/lecture-03-search.pdf
 ```
 
-2. Open `data/materials.json`.
-3. Add a new item inside the `lectures` list:
+2. `data/materials.json` файлын ашыңыз.
+3. `"lectures"` тізімінің ішіне жаңа объект қосыңыз:
 
 ```json
 {
-  "title": "Lecture 3: Search Algorithms",
-  "description": "Introduction to search problems, state spaces, and basic AI search methods.",
+  "title": "3-дәріс: Іздеу алгоритмдері",
+  "description": "Іздеу есептері, күй кеңістігі және негізгі ЖИ іздеу әдістері.",
   "type": "pdf",
-  "week": "Week 3",
-  "tags": ["search", "algorithms"],
+  "week": "3-апта",
+  "tags": ["іздеу", "алгоритмдер"],
   "previewUrl": "assets/materials/lectures/lecture-03-search.pdf",
   "viewUrl": "assets/materials/lectures/lecture-03-search.pdf",
   "downloadUrl": "assets/materials/lectures/lecture-03-search.pdf"
 }
 ```
 
-4. Save the file.
-5. Commit and push your changes to GitHub.
+4. Файлды сақтаңыз.
+5. Өзгерістерді GitHub-қа жіберіңіз:
 
-## Replacing Sample Files
+```bash
+git add .
+git commit -m "Add lecture 3"
+git push
+```
 
-The included PDF files are simple sample files. Replace them with real PDF files using the same filenames, or update the filenames in `data/materials.json`.
+## Үлгі файлдарды ауыстыру
 
-For Google Drive folders, replace `FOLDER_ID` in `googleDrivePreviewUrl` with your real folder ID.
+Жобадағы PDF файлдар тек үлгі ретінде берілген. Оларды нақты PDF файлдармен ауыстырыңыз немесе `data/materials.json` ішіндегі файл атауларын өзгертіңіз.
 
-For YouTube, use the embed format:
+Google Drive папкасын қосу үшін `googleDrivePreviewUrl` ішіндегі `FOLDER_ID` орнына өз папкаңыздың ID нөмірін қойыңыз.
+
+YouTube бейнесін қосу үшін embed форматын қолданыңыз:
 
 ```text
 https://www.youtube.com/embed/VIDEO_ID

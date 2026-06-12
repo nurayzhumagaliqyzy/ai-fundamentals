@@ -13,7 +13,7 @@ if (pageType) {
 }
 
 async function loadMaterials(type, container) {
-  container.innerHTML = '<div class="empty-state">Loading materials...</div>';
+  container.innerHTML = '<div class="empty-state">Материалдар жүктеліп жатыр...</div>';
 
   try {
     const response = await fetch(DATA_PATH);
@@ -25,14 +25,14 @@ async function loadMaterials(type, container) {
     const items = Array.isArray(data[type]) ? data[type] : [];
 
     if (!items.length) {
-      container.innerHTML = '<div class="empty-state">No materials added yet.</div>';
+      container.innerHTML = '<div class="empty-state">Әзірге материал қосылмаған.</div>';
       return;
     }
 
     container.innerHTML = items.map((item) => renderCard(item, type)).join("");
   } catch (error) {
     container.innerHTML =
-      '<div class="error-state">Materials could not be loaded. Check data/materials.json and try again.</div>';
+      '<div class="error-state">Материалдар жүктелмеді. data/materials.json файлын тексеріп, қайта көріңіз.</div>';
   }
 }
 
@@ -90,7 +90,7 @@ function renderPreview(item, type) {
     `;
   }
 
-  const label = type === "practicals" ? "Practical material" : "Course material";
+  const label = type === "practicals" ? "Практикалық материал" : "Курс материалы";
   return `<div class="file-preview"><strong>${escapeHtml(label)}</strong></div>`;
 }
 
@@ -98,7 +98,7 @@ function renderActions(item) {
   const actions = [];
 
   if (item.viewUrl) {
-    actions.push(linkButton("View", item.viewUrl, "primary"));
+    actions.push(linkButton("Қарау", item.viewUrl, "primary"));
   }
 
   if (item.githubUrl) {
@@ -110,7 +110,7 @@ function renderActions(item) {
   }
 
   if (item.downloadUrl) {
-    actions.push(linkButton("Download", item.downloadUrl, "light", true));
+    actions.push(linkButton("Жүктеу", item.downloadUrl, "light", true));
   }
 
   return actions.join("");
